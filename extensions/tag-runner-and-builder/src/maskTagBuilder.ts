@@ -1,8 +1,10 @@
 import { TagBuilder } from '@vulcan-sql/core';
 
 export class MaskTagBuilder extends TagBuilder {
+  // Claim the tag name, tell us when should we give you the control.
   public tags: string[] = ['mask', 'endmask'];
 
+  // When the target tags are found, we call parse() function, you need to return an AST node
   public parse(parser: any) {
     // SELECT {% mask len=3 %} id {% endmask %} FROM users;
 
