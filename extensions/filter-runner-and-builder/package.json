@@ -1,5 +1,5 @@
 {
-  "name": "@vulcan-sql-demo/mask-tag",
+  "name": "@vulcan-sql-demo/prefix-filter",
   "scripts": {
     "build": "rm -rf dist && tsc && cp package.json ./dist"
   },

@@ -1,4 +1,4 @@
-name: 'vulcan-demo-extensions'
+name: "vulcan-demo-extensions"
 description: A starter Vulcan project
 version: 0.2.0
 template:
@@ -32,5 +32,6 @@ response-format:
       - json
       - csv
 extensions:
-  duckdb: '@vulcan-sql/extension-driver-duckdb'
-  maskTag: '@vulcan-sql-demo/mask-tag'
+  duckdb: "@vulcan-sql/extension-driver-duckdb"
+  maskTag: "@vulcan-sql-demo/mask-tag"
+  prefixFilter: "@vulcan-sql-demo/prefix-filter"

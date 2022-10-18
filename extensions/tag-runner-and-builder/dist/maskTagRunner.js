@@ -29,7 +29,6 @@ const nunjucks = __importStar(require("nunjucks"));
 class MaskTagRunner extends core_1.TagRunner {
     tags = ['mask', 'endmask'];
     async run({ args, contentArgs }) {
-        console.log(args, args[0]);
         // Get the arguments
         let { len = 3, padding = 5 } = args[0]; // TODO: Fix the argument type
         // Render sqls
@@ -37,6 +36,7 @@ class MaskTagRunner extends core_1.TagRunner {
         let paddingString = '';
         while (padding--)
             paddingString += 'x';
+        // Use SafeString to avoid auto escaping
         return new nunjucks.runtime.SafeString(`CONCAT(SUBSTR(${sql}, 0, ${len + 1}), '${paddingString}')`);
     }
 }

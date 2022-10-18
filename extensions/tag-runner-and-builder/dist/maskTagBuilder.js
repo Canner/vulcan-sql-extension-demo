@@ -3,7 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.MaskTagBuilder = void 0;
 const core_1 = require("@vulcan-sql/core");
 class MaskTagBuilder extends core_1.TagBuilder {
+    // Claim the tag name, tell us when should we give you the control.
     tags = ['mask', 'endmask'];
+    // When the target tags are found, we call parse() function, you need to return an AST node
     parse(parser) {
         // SELECT {% mask len=3 %} id {% endmask %} FROM users;
         // Tokens: mask
