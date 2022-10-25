@@ -32,5 +32,6 @@ response-format:
 extensions:
   duckdb: "@vulcan-sql/extension-driver-duckdb"
   maskTag: "@vulcan-sql-demo/mask-tag"
+  maskTag2: "@vulcan-sql-demo/mask-tag-2"
   prefixFilter: "@vulcan-sql-demo/prefix-filter"
   mockTemplate: "@vulcan-sql-demo/mock-template-provider"
