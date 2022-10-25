@@ -34,4 +34,5 @@ extensions:
   maskTag: "@vulcan-sql-demo/mask-tag"
   maskTag2: "@vulcan-sql-demo/mask-tag-2"
   prefixFilter: "@vulcan-sql-demo/prefix-filter"
+  prefixFilter2: "@vulcan-sql-demo/prefix-filter-2"
   mockTemplate: "@vulcan-sql-demo/mock-template-provider"
